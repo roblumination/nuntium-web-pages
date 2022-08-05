@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+.editor-picks {
+  border: 1px solid #f00;
+  width: 858px;
+  margin: 0 auto;
+  min-height: 500px;
+}
+.editor-picks header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 90px;
+}
+.editor-picks header h1 {
+  font-size: 42px;
+  font-family: "Open Sans";
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 12px;
+  color: #1c1c1c;
+}
+.editor-picks header .line {
+  width: 190px;
+  min-height: 5px;
+  background-color: #1c1c1c;
+}
+
+header {
+  height: 57px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 43px;
+}
+header .logo__wrapper {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+header .logo__wrapper .logo-text {
+  line-height: 38px;
+  color: #1c1c1c;
+  position: relative;
+  padding-left: 16px;
+  padding-bottom: 3px;
+  color: #1c1c1c;
+  font-size: 30px;
+  font-weight: bold;
+}
+header .logo__wrapper .logo-text__inverted {
+  color: #fff;
+}
+header .logo__wrapper .black-square {
+  background-color: #1c1c1c;
+  position: absolute;
+  height: 57px;
+  width: 58px;
+}
+header nav {
+  font-size: 20px;
+  padding-left: 44px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 35px;
+}
+header nav a {
+  text-decoration: none;
+  color: inherit;
+}
+header nav a:hover {
+  text-decoration: underline;
+}
+header nav .selected {
+  font-weight: bold;
+}
+header .search__wrapper {
+  position: relative;
+  margin-left: auto;
+}
+header .search__wrapper #search {
+  position: relative;
+  z-index: 500;
+  border: 6px solid rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 30px;
+  height: 46px;
+  width: 50px;
+  padding: 15px;
+  font-size: inherit;
+  font-family: inherit;
+  transition: all ease 0.3s;
+  transform: scale(0.4) translate(-5px, -5px);
+}
+header .search__wrapper #search:focus, header .search__wrapper #search:not(:placeholder-shown) {
+  border: 2px solid #1c1c1c;
+  width: 346px;
+  border-radius: 10px;
+  transform: none;
+}
+header .search__wrapper #search-ico {
+  position: absolute;
+  right: 11px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+header .login {
+  border: 2px solid #1c1c1c;
+  height: 46px;
+  width: 135px;
+  border-radius: 10px;
+  margin-left: 9px;
+  font-size: 20px;
+  font-family: inherit;
+  background-color: #fff;
+}
+header .login:hover {
+  background-color: rgba(0, 0, 0, 0.0666666667);
+}
+header .login:active {
+  background-color: rgba(0, 0, 0, 0.1333333333);
+}
+
+.article-heading {
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 12px;
+  font-size: 33px;
+  font-weight: bold;
+}
+
+.article-info {
+  font-family: "Open Sans";
+  color: rgba(28, 28, 28, 0.5333333333);
+}
+.article-info_small {
+  font-size: 14px;
+}
+
+.category {
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.article-content {
+  font-family: "Open Sans";
+  line-height: 24px;
+}
+
+.article-big {
+  height: 592px;
+  width: 100%;
+}
+.article-big_left {
+  background: url("/src/assets/cry_baby.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.article-big_left .article {
+  margin-left: 45px;
+  background-color: #fff;
+  width: 509px;
+  height: 483px;
+  padding: 40px;
+  padding-top: 76px;
+}
+.article-big_right {
+  background: url("/src/assets/room.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.article-big_right .article {
+  margin-top: 54px;
+  margin-right: 78px;
+  background-color: #fff;
+  width: 509px;
+  height: 483px;
+  padding: 40px;
+  padding-top: 76px;
+}
+
+.article-common {
+  display: flex;
+  gap: 55px;
+  margin-bottom: 50px;
+}
+.article-common .article-img {
+  display: block;
+  width: 371px;
+  height: 298px;
+}
+html,
+body {
+  font-family: "Libre Baskerville";
+  font-size: 16px;
+  margin: 0px;
+  box-sizing: border-box;
+  min-width: 1024px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 25px;
+  padding-top: 31px;
+}
+
+/*# sourceMappingURL=styles.css.map */

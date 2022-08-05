@@ -1,0 +1,88 @@
+$black: #1c1c1c;
+
+//
+// Typography
+//
+
+@mixin backgroundIMG($url) {
+  background: url($url);
+  background-size: cover;
+  background-position: center;
+}
+
+.article-heading {
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 12px;
+  font-size: 33px;
+  font-weight: bold;
+}
+
+.article-info {
+  font-family: "Open Sans";
+  // opacity: 50%;
+  color: #1c1c1c88;
+
+  &_small {
+    font-size: 14px;
+  }
+}
+
+.category {
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.article-content {
+  font-family: "Open Sans";
+  line-height: 24px;
+}
+
+// article containers
+
+.article-big {
+  height: 592px;
+  width: 100%;
+
+  &_left {
+    // background: url("/src/assets/cry_baby.jpg");
+    @include backgroundIMG("/src/assets/cry_baby.jpg");
+
+    .article {
+      margin-left: 45px;
+      background-color: #fff;
+      width: 509px;
+      height: 483px;
+      padding: 40px;
+      padding-top: 76px;
+    }
+  }
+  &_right {
+    @include backgroundIMG("/src/assets/room.png");
+    display: flex;
+    flex-direction: row-reverse;
+
+    .article {
+      margin-top: 54px;
+      margin-right: 78px;
+      background-color: #fff;
+      width: 509px;
+      height: 483px;
+      padding: 40px;
+      padding-top: 76px;
+    }
+  }
+}
+
+.article-common {
+  display: flex;
+  gap: 55px;
+  margin-bottom: 50px;
+  .article-img {
+    display: block;
+    width: 371px;
+    height: 298px;
+  }
+  .article {
+  }
+}

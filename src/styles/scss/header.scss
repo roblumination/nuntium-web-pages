@@ -1,0 +1,129 @@
+$black: #1c1c1c;
+
+header {
+  height: 57px;
+
+  display: flex;
+  align-items: center;
+  margin-bottom: 43px;
+
+  ///
+  // border: 1px solid #ff0;
+  ///
+
+  .logo__wrapper {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+
+    ///
+    // border: 1px solid #f00;
+    ///
+
+    .logo-text {
+      // padding-bottom: 9px;
+      line-height: 38px;
+      color: $black;
+      position: relative;
+
+      padding-left: 16px;
+      padding-bottom: 3px;
+      color: $black;
+      font-size: 30px;
+      font-weight: bold;
+
+      &__inverted {
+        color: #fff;
+      }
+    }
+
+    .black-square {
+      background-color: $black;
+      position: absolute;
+      height: 57px;
+      width: 58px;
+    }
+  }
+
+  nav {
+    font-size: 20px;
+    padding-left: 44px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 35px;
+
+    a {
+      text-decoration: none;
+      color: inherit;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .selected {
+      font-weight: bold;
+    }
+  }
+
+  .search__wrapper {
+    position: relative;
+    margin-left: auto;
+
+    #search {
+      position: relative;
+      z-index: 500;
+      border: 6px solid #0000;
+      background-color: #0000;
+      border-radius: 30px;
+      // border-radius: 10px;
+      height: 46px;
+      width: 50px;
+
+      padding: 15px;
+      font-size: inherit;
+      font-family: inherit;
+
+      transition: all ease 0.3s;
+      // transition: border 1s;
+
+      transform: scale(0.4) translate(-5px, -5px);
+
+      &:focus,
+      &:not(:placeholder-shown) {
+        border: 2px solid $black;
+        width: 346px;
+        border-radius: 10px;
+        transform: none;
+      }
+    }
+
+    #search-ico {
+      position: absolute;
+      right: 11px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  .login {
+    border: 2px solid $black;
+    height: 46px;
+    width: 135px;
+    border-radius: 10px;
+    margin-left: 9px;
+    font-size: 20px;
+    font-family: inherit;
+    background-color: #fff;
+
+    &:hover {
+      background-color: #0001;
+    }
+
+    &:active {
+      background-color: #0002;
+    }
+  }
+}
